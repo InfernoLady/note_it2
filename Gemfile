@@ -42,11 +42,8 @@ gem 'time_ago_in_words'
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
 gem 'fullcalendar_engine', '~> 1.0.6'
+gem 'quiet_assets'
 
-
-group :development do
-	gem 'sqlite3'
-end
 
 group :production do
 	gem 'pg'
