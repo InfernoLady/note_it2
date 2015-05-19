@@ -2,8 +2,12 @@
 %p= @note.content
 %p= @note.category.name
 
-
 = link_to "All Notes", notes_path
 
 = link_to "Edit", edit_note_path(@note)
 = link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }
+
+#comments
+= render @note.comments
+%h3 Add a comment
+= render 'comments/form'
