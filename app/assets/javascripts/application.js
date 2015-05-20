@@ -12,13 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require jquery-ui
+//= require bootstrap-sprockets
 //= require moment
-//= require fullcalendar
 //= require_tree .
 
 
-$(function() {
-  //$('.datepicker').datepicker();
-});

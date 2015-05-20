@@ -11,12 +11,12 @@
  * file per style scope.
  *
  
- *= require fullcalendar
- *= require jquery-ui
+ *= require_tree .
  *= require_self
+ *= require jquery-ui
+ 
  */
  
 
-@import 'global.css.scss';
-@import 'notes.css.scss';
-@import 'home.css.scss';
+@import "bootstrap-sprockets";
+@import "bootstrap";

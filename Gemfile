@@ -40,10 +40,9 @@ gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.4.1'
 gem 'time_ago_in_words'
 gem 'momentjs-rails'
-gem 'fullcalendar-rails'
-gem 'fullcalendar_engine', '~> 1.0.6'
 gem 'quiet_assets'
-gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '~> 3.3.4.1'
+
 
 
 group :production do

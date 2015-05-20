@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Note It! | Keep your life in order.</title>
-  <%= stylesheet_link_tag    'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
@@ -24,7 +24,8 @@
           <div>
             <ul class="nav nav-pills">
               <li class="active">
-              <li><span class="glyphicon glyphicon-pencil"><%= link_to "Sign up/in", new_user_session_path %></span></li>
+              <li><span class="glyphicon glyphicon-pencil"><%= link_to "Sign in", new_user_session_path %></span></li>
+              <li><span class="glyphicon glyphicon-pencil"><%= link_to "Sign up", new_user_registration_path %></span></li>
             </ul>
           </div>
         
