@@ -8,14 +8,26 @@
 </head>
 <body>
   <header>
-    <div class="header_inner">
-      <%= link_to image_tag( 'logo.png'), root_path, id: "logo" %>
+    <!--<div class="header_inner">
+      <%= link_to image_tag( 'logo.png'), root_path, id: "logo" %>-->
+      <div>
+        <h1>Welcome to Note It!</h1>
+        <h3>Sign up below and keep your life in order.</h3>
+      </div>
+      
       <nav>
         <% if user_signed_in? %>
           <%= link_to "New Note", new_note_path %>
           <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+        
         <% else %>
-          <%= link_to "Log In", new_user_session_path %>
+          <div>
+            <ul class="nav nav-pills">
+              <li class="active">
+              <li><span class="glyphicon glyphicon-pencil"><%= link_to "Sign up/in", new_user_session_path %></span></li>
+            </ul>
+          </div>
+        
         <% end %>
       </nav>
     </div>
