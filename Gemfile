@@ -43,6 +43,7 @@ gem 'momentjs-rails'
 gem 'fullcalendar-rails'
 gem 'fullcalendar_engine', '~> 1.0.6'
 gem 'quiet_assets'
+gem "twitter-bootstrap-rails"
 
 
 group :production do
