@@ -1,11 +1,9 @@
+<div class="commentbox">
 <%= simple_form_for([@note, @note.comments.build]) do |f| %>
-	<p>
-		<%= f.input :content %><br>
-		
-	</p>
-	</br>
-	<p>
-		<%= f.button :submit %>
-	</p>
+	
+	<%= f.input :content %>
+	<%= f.button :submit %>
+</div>
+	
 
 <% end %>
