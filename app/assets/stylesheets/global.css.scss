@@ -1,0 +1,82 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+
+nav p {
+	text-align: center;
+}
+
+span {
+	padding-left: 15px;
+}
+
+.jumbotron h1,h3 {
+	text-align: center;
+	
+}
+
+.form-inputs .form-test {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    width: 220px;
+    height: 250px; 
+}
+
+.form-inputs {
+	text-align: center;
+	padding-bottom: 3px;
+}
+
+.form-actions {
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+
+.shared-links {
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 0px;
+
+}
+
+.sign-in {
+	text-align: center;
+
+}
+
+.sign-up {
+	text-align: center;
+
+}
+
+.navbar .container {
+    left:25px;
+	padding-top: 12px;
+}
+
+.navbar .container .btn {
+	position:absolute;
+    right: 25px;
+}
+
+.index-note {
+	margin-left: -80px
+}
+
+.commentremovebtn {
+	color: white;
+}
+ 

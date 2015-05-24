@@ -7,23 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
     <% if user_signed_in? %>
-        <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <p> Note It! </p>
-        </a>
-    </div>
-    
-    <div class="container">
-    <%= link_to "All Notes", notes_path %>
     <%= link_to "New Note", new_note_path %>
-    <button type="button" class="btn btn-default btn-sm"><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></button>
-    
-    </div>
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
         
     <% else %>
-    <nav>
       <div class="jumbotron">
           <h1>Welcome to Note It!</h1>
           <h3>Sign up below and keep your life in order.</h3>
