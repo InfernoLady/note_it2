@@ -1,10 +1,8 @@
 <div class="comment clearfix">
 	<div class="comment_content">
-		<class="comment_content"><%= " #{comment.content}" %>
+		<p class="comment_content"><%= "#{comment.user.email}: #{comment.content}" %><p>
 	</div>
 
-	<div class="commentremovebtn">
-	<button type="button" class="btn btn-danger btn-xs"><%= link_to 'Remove', [comment.note, comment], method: :delete, data: { confirm: "Are you sure?" } %></button>
-	</div>
+	<p><%= link_to 'X', [comment.note, comment], method: :delete, data: { confirm: "Are you sure?" } %></p>
+
 </div>
-

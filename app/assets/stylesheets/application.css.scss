@@ -29,7 +29,7 @@ body {
 }
 
 
-nav p {
+h1,h3, nav p {
 	text-align: center;
 }
 
@@ -37,8 +37,7 @@ span {
 	padding-left: 15px;
 }
 
-.jumbotron h1 h3 {
-	text-align: center;
+.jumbotron {
 	
 }
 
@@ -49,7 +48,7 @@ span {
 
 }
 
-.form-actions {
+.form-actions{
 	text-align: center;
 	padding-bottom: 5px;
 
@@ -65,31 +64,10 @@ span {
 
 .sign-in {
 	text-align: center;
+}
+
+.sign-in .container {
+
 	background-color: #E6E6E6;
-
+	
 }
-
-.sign-up {
-	text-align: center;
-
-}
-
-.navbar .container {
-	padding-top: 12px;
-
-
-}
-
-.navbar .container .btn {
-	position:relative;
-    left: 1040px;
-}
-
-.index-note {
-	margin-left: -80px
-}
-
-.commentremovebtn {
-	color: white;
-}
-
