@@ -1,3 +1,20 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.note-input {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    width: 700px;
+    height: 400px; 
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Niconne', cursive;
+}
+

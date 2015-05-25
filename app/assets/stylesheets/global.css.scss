@@ -80,3 +80,77 @@ span {
 	color: white;
 }
  
+.container .navtxt {
+	text-align: center;
+	padding-top: 3px;
+}
+
+.green {
+	color: #29A329;
+}
+
+.orange {
+	color: #FF6C47;
+}
+
+.container .btn {
+	padding-top: 2px;
+}
+
+.navbar {
+	background-color: #474747;
+
+	
+}
+
+.navbar-brand p {
+	color: #B8B8B8;
+	font-family: 'Niconne', cursive;
+	font-size: 27px;
+}
+
+.navbar-brand .glyphicon {
+	font-size: 20px;
+	
+}
+
+.link-to-text-color {
+	color: #B8B8B8;
+
+
+}
+
+.link-to-text-color:hover {
+	color: #959595;
+	text-decoration: none;
+}
+
+.link-to-text-color:active {
+	color: #959595;
+	text-decoration: none;
+}
+
+
+.btnsignout .btn {
+	background-color: #BFBFBF;
+	border-width: 1px;
+	border-color: #868686;
+
+
+
+}
+
+.btnsignout .btn:hover {
+	background-color: #ACACAC;
+}
+
+.btnsignout .btn .link-to-text-color {
+	color: #474747;
+	
+}
+
+.fields {
+	width: 100px;
+	height: 50px;
+}
+

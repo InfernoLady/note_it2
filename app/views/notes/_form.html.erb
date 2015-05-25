@@ -1,7 +1,11 @@
-<%= simple_form_for @note do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content %>
-  <%= f.input :created_at %>
-  <%= f.association :category, label_method: :category_name, value_method: :id %>
-  <%= f.button :submit %>
-<% end %>
+<div class="note-input">
+	<%= simple_form_for @note do |f| %>
+  		<%= f.input :title, :class => 'fields' %>
+  		<%= f.input :content %>
+  		<%= f.input :created_at %>
+  		<%= f.association :category, label_method: :category_name, value_method: :id %>
+  		<%= f.submit :class => 'btn btn-default' %>
+	<% end %>
+</div>
+
+<!-- <%= f.button :submit :class => 'button' %> -->
