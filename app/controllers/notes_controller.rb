@@ -7,6 +7,10 @@ class NotesController < ApplicationController
     @notes = Note.where(user_id: current_user)
     @notes_by_date = @notes.group_by(&:created_at)
     @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    respond_to do |format|
+      format.html
+      format.js
+    end
 	end
 
 	def show

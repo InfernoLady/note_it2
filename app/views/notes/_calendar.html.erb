@@ -1,0 +1,16 @@
+<h2 id="month">
+  <%= link_to "<", date: current_date.prev_month, remote: true %>
+  <%= current_date.strftime("%B %Y") %>
+  <%= link_to ">", date: current_date.next_month, remote: true %>
+</h2>
+
+<%= calendar current_date do |date| %>
+    <%= date.day %>
+    <% if notes_by_date[date] %>
+        <ul>
+          <% notes_by_date[date].each do |note| %>
+              <li><%= link_to note.title, note, style: "color: #{note.category.color}" %></li>
+          <% end %>
+        </ul>
+    <% end %>
+<% end %>
