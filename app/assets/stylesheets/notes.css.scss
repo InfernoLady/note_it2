@@ -17,6 +17,58 @@
     
 }
 
+
+.default_class .btn  {
+    
+    
+}
+
+.notetitle {
+    width: 350px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
+   
+}
+
+.notetitle:title {
+  text-align: center;
+}
+
+.notecontent {
+    width: 450px;
+    height: 200px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
+
+}
+
+.createdat {
+    width: 100px;
+    height: 28px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
+ 
+}
+
+.notecategory {
+    width: 115px;
+    height: 30px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
+  
+
+}
+
+
+
 h1 {
 	text-align: center;
 	font-family: 'Niconne', cursive;
@@ -68,6 +120,7 @@ h1 {
   border-collapse: collapse;
   width: 100%;
 
+
   td, th {
     font-family: "Lucida Grande", arial, helvetica, sans-serif;
     font-size: 10px;
@@ -109,4 +162,5 @@ h1 {
 #notes ul {
   font-size: 11px;
   padding-left: 20px;
+  
 }
