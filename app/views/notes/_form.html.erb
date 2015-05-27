@@ -4,7 +4,8 @@
   		<%= f.input :content, input_html: { class: 'notecontent' }  %>
   		<%= f.input :created_at, input_html: { class: 'createdat' }, label: 'Date' %>
   		<%= f.association :category, input_html: { class: 'notecategory' }, label_method: :category_name, value_method: :id %>
-  		<%= f.submit :class => 'btn btn-success' %>
+  		<%= f.submit :class => 'btn btn-success' %> 
 	<% end %>
 </div>
+
 
