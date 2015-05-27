@@ -4,7 +4,9 @@ class NotesController < ApplicationController
 
 
 	def index
-		@notes = Note.where(user_id: current_user)
+    @notes = Note.where(user_id: current_user)
+    @notes_by_date = @notes.group_by(&:created_at)
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
 	end
 
 	def show
@@ -15,7 +17,6 @@ class NotesController < ApplicationController
 	end
 
 	def create
-		logger.warn("====#{params.inspect}")
 		@note= current_user.notes.build(note_params)
 		
 		if @note.save

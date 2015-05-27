@@ -42,6 +42,7 @@ gem 'time_ago_in_words'
 gem 'momentjs-rails'
 gem 'quiet_assets'
 gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'annotate'
 
 
 

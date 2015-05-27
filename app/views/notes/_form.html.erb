@@ -2,7 +2,7 @@
 	<%= simple_form_for @note do |f| %>
   		<%= f.input :title, :class => 'fields' %>
   		<%= f.input :content %>
-  		<%= f.input :created_at %>
+  		<%= f.input :created_at, label: 'Date' %>
   		<%= f.association :category, label_method: :category_name, value_method: :id %>
   		<%= f.submit :class => 'btn btn-success' %>
 	<% end %>
