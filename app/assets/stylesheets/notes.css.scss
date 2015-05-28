@@ -2,25 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+abbr[title="required"] {
+  display: none;
+
+  
+}
+
+
+
 .note-input {
 	text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 	border-radius: 10px;
-    border: 1px solid #cccccc;
-    padding: 20px;
-    width: 700px;
-    height: 400px; 
-}
-
-.note-input .btn {
-    
+  border: 1.5px solid #cccccc;
+  padding: 20px;
+  width: 700px;
+  height: 400px; 
 }
 
 
-.default_class .btn  {
+
+.note-input .simple_form label {
+  float: left;
+  width: 50px;
+  text-align: center;
+  margin: 2px 10px;
+  text-transform: capitalize;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+
+
+}
+
+.note-input .simple_form div.input {
+  margin-bottom: 10px;
+}
+
+
+.note-input label .string_required {
+  text-align: left;
     
     
+}
+
+.note-input .btn-success {
+  margin-left: 68px;
+
 }
 
 .notetitle {
@@ -29,7 +58,13 @@
     background: #ffffff;
     border: 1px solid #cccccc;
     outline: none;
+    text-align: center;
    
+}
+
+.notetitle:focus {
+  border: 1px solid #FF9933;
+  box-shadow: 0px 0px 3px 1px #FFAC59;
 }
 
 .notetitle:title {
@@ -46,6 +81,11 @@
 
 }
 
+.notecontent:focus {
+  border: 1px solid #FF9933;
+  box-shadow: 0px 0px 3px 1px #FFAC59;
+}
+
 .createdat {
     width: 100px;
     height: 28px;
@@ -53,7 +93,13 @@
     background: #ffffff;
     border: 1px solid #cccccc;
     outline: none;
+    
  
+}
+
+.createdat:focus {
+  border: 1px solid #FF9933;
+  box-shadow: 0px 0px 3px 1px #FFAC59;
 }
 
 .notecategory {
@@ -63,8 +109,16 @@
     background: #ffffff;
     border: 1px solid #cccccc;
     outline: none;
-  
+    
 
+}
+
+
+
+
+.notecategory:focus {
+  border: 1px solid #FF9933;
+  box-shadow: 0px 0px 3px 1px #FFAC59;
 }
 
 
@@ -75,17 +129,69 @@ h1 {
 }
 
 .show-note {
-    text-align: left;
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 1.5px solid #cccccc;
+  padding: 20px;
+  width: 700px;
+  height: 400px; 
 }
 
-.show-note h1 {
+.commentbox .simple_form label {
+  float: left;
+  width: 50px;
+  text-align: center;
+  margin: 2px 10px;
+  text-transform: capitalize;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+
+}
+
+.commentbox .simple_form div.input {
+  margin-bottom: 10px;
+}
+
+
+.commentbox label .string_required {
+  text-align: left;
+    
+    
+}
+
+.commentbox .btn-success {
+  margin-left: 68px;
+
+
+}
+
+.commentbox .commentcont {
+    width: 350px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
     text-align: left;
+   
+}
+
+.commentbox .commentcont:focus {
+  border: 1px solid #FF9933;
+  box-shadow: 0px 0px 3px 1px #FFAC59;
+}
+
+
+.show-note h1 {
+    text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 30px;
 }
 
 .show-note h3 {
-    text-align: left;
+    text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;
 }
@@ -112,6 +218,12 @@ h1 {
 
 .note-index h3 {
     text-align: left;
+}
+
+.note-edit h3 {
+  text-align: center;
+  font-family: 'Niconne', cursive;
+  font-size: 35px;
 }
 
 /*CALENDAR*/
