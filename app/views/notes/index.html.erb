@@ -9,8 +9,8 @@
   <h2>Comments:</h2>
   <% Note.includes(:comments).all.each do |note| %>
       <div class="note_title">
-        <h4>Note title: <%= link_to note.title, note_path(note) %></h4>
-        <h5><%= 'Comments:' unless note.comments.empty? %></h5>
+        <h4><%= link_to note.title, note_path(note) %></h4>
+        
         <% note.comments.each do |comment| %>
             <%= comment.content %>
         <% end %>

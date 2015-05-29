@@ -16,7 +16,8 @@ abbr[title="required"] {
   margin-left: auto;
   margin-right: auto;
 	border-radius: 10px;
-  border: 1.5px solid #cccccc;
+  border: 1.5px solid  #B4B4B4;
+  background: #DEDEDE;
   padding: 20px;
   width: 700px;
   height: 400px; 
@@ -55,8 +56,8 @@ abbr[title="required"] {
 .notetitle {
     width: 350px;
     border-radius: 5px;
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    border: 1px solid  #B4B4B4;
     outline: none;
     text-align: center;
    
@@ -75,8 +76,8 @@ abbr[title="required"] {
     width: 450px;
     height: 200px;
     border-radius: 5px;
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    border: 1px solid  #B4B4B4;
     outline: none;
 
 }
@@ -90,8 +91,8 @@ abbr[title="required"] {
     width: 100px;
     height: 28px;
     border-radius: 5px;
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    border: 1px solid  #B4B4B4;
     outline: none;
     
  
@@ -106,14 +107,11 @@ abbr[title="required"] {
     width: 115px;
     height: 30px;
     border-radius: 5px;
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    border: 1px solid  #B4B4B4;
     outline: none;
     
-
 }
-
-
 
 
 .notecategory:focus {
@@ -129,15 +127,39 @@ h1 {
 }
 
 .show-note {
-  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 110px;
+  padding-top: -40px;
+  border-radius: 10px;
+  border: 1.5px solid #B4B4B4;
+  padding: 20px;
+  width: 660px;
+  height: 200px; 
+  background:  #DEDEDE;
+}
+
+.overview h3 {
+  font-family: 'Niconne', cursive;
+  font-size: 33px;
+}
+
+.commbox h3 {
+  font-family: 'Niconne', cursive;
+  font-size: 33px;
+}
+
+.commentbox {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  border: 1.5px solid #cccccc;
+  border: 1.5px solid #B4B4B4;
   padding: 20px;
-  width: 700px;
-  height: 400px; 
+  width: 660px;
+  height: 120px;
+  background: #DEDEDE;
 }
 
 .commentbox .simple_form label {
@@ -152,7 +174,7 @@ h1 {
 }
 
 .commentbox .simple_form div.input {
-  margin-bottom: 10px;
+  margin-bottom: 3.5px;
 }
 
 
@@ -162,14 +184,15 @@ h1 {
     
 }
 
-.commentbox .btn-success {
-  margin-left: 68px;
+.commentbox .btn {
+  margin-right: 0px;
 
 
 }
 
 .commentbox .commentcont {
-    width: 350px;
+    width: 450px;
+    height: 50px;
     border-radius: 5px;
     background: #ffffff;
     border: 1px solid #cccccc;
@@ -224,6 +247,24 @@ h1 {
   text-align: center;
   font-family: 'Niconne', cursive;
   font-size: 35px;
+}
+
+.note-edit button {
+  margin-left: 790px;
+
+}
+
+
+.note_comments {
+  text-align: center;
+
+  
+}
+
+
+
+.black {
+  font-size: 15px;
 }
 
 /*CALENDAR*/
