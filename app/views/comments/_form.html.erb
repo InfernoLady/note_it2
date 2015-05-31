@@ -1,4 +1,7 @@
 <div class="commentbox">
+	<div id="comments"></div>
+	<%= render @note.comments %>
+	
 	<%= simple_form_for([@note, @note.comments.build]) do |f| %>
 	<%= f.input :content, input_html: { class: 'commentcont' }  %>
 	<%= f.submit :class => 'btn btn-success btn-sm' %>

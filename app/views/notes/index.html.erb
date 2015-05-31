@@ -8,12 +8,15 @@
 <div class="note_comments">
   <h2>Comments:</h2>
   <% Note.includes(:comments).all.each do |note| %>
-      <div class="note_title">
-        <h4><%= link_to note.title, note_path(note) %></h4>
-        
-        <% note.comments.each do |comment| %>
+         <p class="note_comm">
+          <% note.comments.each do |comment| %>
             <%= comment.content %>
-        <% end %>
-      </div>
+          <% end %>
+        </p>
+
+        <div class="note_title">
+          <h4><span class="glyphicon glyphicon-arrow-right"aria-hidden="true"></span> <%= link_to note.title, note_path(note) %></h4>
+        </div>
+       
   <% end %>
 </div>

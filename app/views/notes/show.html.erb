@@ -1,25 +1,27 @@
 <div class="overview">
-<h3>Overview</h3>
+<h3>Note Overview</h3>
 </div>
 <div class="show-note">
-	
+		
+	<p class="overviewt"><b><em>Title:</em></b> <%= @note.title %></p>
+	<p class="overviewcon"><b><em>Content:</em></b> <%= @note.content %></p>
+	<p class="overviewcat"><b><em>Category:</em></b> <%= @note.category.name %></p>
+
+	<div class="overviewbtn">
 	<button class="btn btn-success btn-xs"><%= link_to "Edit", edit_note_path(@note), class: 'link-color' %></button>
 	<button class="btn btn-danger btn-xs"><%= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }, class: 'link-color' %></button>
-
-		
-	<p>Title<%= @note.title %></p>
-	<p>Content<%= @note.content %></p>
-	<p>Category<%= @note.category.name %></p>
-	<div id="comments"></div>
-	<%= render @note.comments %>
+	</div>
+	
 </div>
 	
 
 	<!-- <%= link_to "All Notes", notes_path %> -->
 	
 
-<div class="commbox">
+
+<div class="commbox">	
 	<h3>Comment Box</h3>
 	<%= render 'comments/form' %>
+	
 </div>
 		
